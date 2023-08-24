@@ -1,24 +1,40 @@
 # Magnify
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Magnify directive helps to magnify the image on mouse hover. Currently it is only work if **z** is pressed and hover on image.
 
-## Code scaffolding
+To implement this directive, you need to add **magnify** attribute to the image tag.
 
-Run `ng generate component component-name --project magnify` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project magnify`.
-> Note: Don't forget to add `--project magnify` or else it will be added to the default project in your `angular.json` file. 
+```ts
+import { Magnify } from '@ngu/magnify';
 
-## Build
+@NgModule({
+  Imports: [
+    Magnify
+  ]
+})
+export class AppModule {}
+```
 
-Run `ng build magnify` to build the project. The build artifacts will be stored in the `dist/` directory.
+Or You can use it on standalone component.
+```ts
+import { Magnify } from '@ngu/magnify';
 
-## Publishing
+@Component({
+  standalone: true,
+  imports: [
+    Magnify
+  ],
+  selector: 'app',
+  ...
+})
+```
 
-After building your library with `ng build magnify`, go to the dist folder `cd dist/magnify` and run `npm publish`.
+```html
+<img src="image.jpg" magnify />
 
-## Running unit tests
+<!-- You can make the inline false (Default: true) -->
+<img src="image.jpg" magnify [inline]="false" [scale]="3" />
 
-Run `ng test magnify` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<!-- You can specify different image too -->
+<img src="thumnail.jpg" magnify="original.jpg" />
+```

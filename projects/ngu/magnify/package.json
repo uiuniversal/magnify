@@ -1,6 +1,6 @@
 {
   "name": "@ngu/magnify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^16.0.0",
     "@angular/core": "^16.0.0"
@@ -8,5 +8,22 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "author": {
+    "name": "Sheik Althaf",
+    "email": "althafmech@outlook.com"
+  },
+  "bugs": {
+    "url": "https://github.com/uiuniversal/magnify/issues"
+  },
+  "keywords": [
+    "angular",
+    "magnify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiuniversal/magnify"
+  },
+  "homepage": "https://github.com/uiuniversal/magnify#readme",
+  "license": "MIT",
   "sideEffects": false
 }

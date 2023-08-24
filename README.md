@@ -30,5 +30,11 @@ import { Magnify } from '@ngu/magnify';
 ```
 
 ```html
-<img src="image.jpg" magnify="image.jpg" scale="3" />
+<img src="image.jpg" magnify />
+
+<!-- You can make the inline false (Default: true) -->
+<img src="image.jpg" magnify [inline]="false" [scale]="3" />
+
+<!-- You can specify different image too -->
+<img src="thumnail.jpg" magnify="original.jpg" />
 ```

@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@ngu/magnify": [
+      "magnify": [
         "dist/ngu/magnify"
       ]
     },
